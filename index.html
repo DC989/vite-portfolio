@@ -4,28 +4,1320 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Dusan Cajic</title>
   </head>
-  <body>
-    <div
-      id="app"
-      class="flex h-screen flex-col items-center justify-between py-8 text-center text-[#2c3e50] selection:bg-green-100"
-    >
-      <div>
-        <h1
-          class="bg-gradient-to-r from-green-600 to-sky-400 bg-clip-text text-5xl font-black text-transparent selection:bg-transparent"
+  <body class="dark">
+    <div id="app">
+      <header class="header">
+        <nav
+          class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-950"
         >
-          Hello !
-        </h1>
-        <h3 class="my-4 text-2xl font-bold text-gray-500">
-          Vite + JS + tailwindcss v3
-        </h3>
-        <a href="https://vitejs.dev/guide/features.html" target="_blank"
-          >Documentation</a
+          <div
+            class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+          >
+            <a
+              href="/"
+              class="text-primary-400 dark:text-primary-400 -rotate-180 no-underline hover:no-underline text-6xl"
+              >D</a
+            >
+
+            <div class="flex items-center lg:order-2">
+              <a
+                href="#section-contact"
+                class="text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-800 dark:hover:bg-primary-900 focus:outline-none dark:focus:ring-primary-300"
+                >Get Started Today</a
+              >
+              <button
+                data-collapse-toggle="mobile-menu-2"
+                type="button"
+                class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="mobile-menu-2"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <svg
+                  class="hidden w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+              id="mobile-menu-2"
+            >
+              <ul
+                class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+              >
+                <li>
+                  <a
+                    href="/"
+                    class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#section-features"
+                    class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#section-showcase"
+                    class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >Showcases</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#section-testimonials"
+                    class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >Testimonials</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#section-contact"
+                    class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <header
+        class="headerFixed fixed left-0 top-0 hidden w-full lg:block bg-white border-gray-200 dark:bg-gray-950"
+      >
+        <nav
+          class="px-4 lg:px-6 py-2.5 flex justify-between items-center mx-auto max-w-screen-xl"
         >
-      </div>
-      <img class="block" src="./src/assets/powered-by-vitawind-bright.png" />
+          <ul class="flex font-medium flex-row lg:space-x-8">
+            <li>
+              <a
+                href="/"
+                class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section-features"
+                class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section-showcase"
+                class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >Showcases</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section-testimonials"
+                class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section-contact"
+                class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <a
+            href="#section-contact"
+            class="text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-800 dark:hover:bg-primary-900 focus:outline-none dark:focus:ring-primary-300"
+            >Get Started Today</a
+          >
+        </nav>
+      </header>
+
+      <section id="section-hero" class="bg-white dark:bg-gray-900 lg:py-16">
+        <div
+          class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+        >
+          <div class="mr-auto place-self-center lg:col-span-7">
+            <h1
+              class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+            >
+              Hello, I'm Dusan
+            </h1>
+            <h2
+              class="text-primary-400 font-bold text-3xl md:text-4xl xl:text-5xl mb-6 lg:mb-8"
+            >
+              Dedicated to Your Success
+            </h2>
+            <p
+              class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+            >
+              I specialize in crafting high-performance websites and compelling
+              business presentations with your goals in mind. Let me transform
+              your vision into a web-performant reality, ensuring your online
+              presence not only stands out but also drives meaningful results.
+              Partner with me to deliver impactful experiences for your clients
+              and fuel the success of your business.
+            </p>
+            <a
+              href="#section-contact"
+              class="bg-primary-800 hover:text-white hover:bg-primary-900 focus:ring-primary-300 dark:focus:ring-primary-300 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg focus:ring-4"
+            >
+              Let's Build Together
+              <svg
+                class="w-5 h-5 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+            <img class="rounded-full" src="./src/assets/img/me.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="section-features" class="bg-white dark:bg-gray-800 lg:py-16">
+        <div
+          class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 text-center"
+        >
+          <div class="max-w-screen-md mb-8 lg:mb-16 mx-auto">
+            <h2
+              class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+            >
+              Digital Brilliance Unveiled
+            </h2>
+            <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+              Unlock the potential of your online presence with my distinctive
+              advantages. From high-performance websites to captivating
+              presentations, I craft feature delights to elevate your brand.
+              Discover exceptional capabilities as I weave web magic into every
+              project, revealing a realm of digital brilliance and performance
+              perfection
+            </p>
+          </div>
+          <div
+            class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+          >
+            <div>
+              <div
+                class="mx-auto flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-800 lg:h-12 lg:w-12 dark:bg-primary-800"
+              >
+                <svg
+                  class="w-6 h-6 text-primary-600 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 22 20"
+                >
+                  <path
+                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="mb-2 text-xl font-bold dark:text-white">
+                High-Performance Websites
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                Crafting websites optimized for speed, performance, and user
+                experience to leave a lasting impression.
+              </p>
+            </div>
+            <div>
+              <div
+                class="mx-auto flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-800 lg:h-12 lg:w-12 dark:bg-primary-800"
+              >
+                <svg
+                  class="w-6 h-6 text-primary-600 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 18 19"
+                >
+                  <path
+                    d="M15 1.943v12.114a1 1 0 0 1-1.581.814L8 11V5l5.419-3.871A1 1 0 0 1 15 1.943ZM7 4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V4ZM4 17v-5h1v5H4ZM16 5.183v5.634a2.984 2.984 0 0 0 0-5.634Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="mb-2 text-xl font-bold dark:text-white">
+                Compelling Presentations
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                Designing business presentations that captivate and effectively
+                convey your message to clients and stakeholders.
+              </p>
+            </div>
+            <div>
+              <div
+                class="mx-auto flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-800 lg:h-12 lg:w-12 dark:bg-primary-800"
+              >
+                <svg
+                  class="w-6 h-6 text-primary-600 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 14 18"
+                >
+                  <path
+                    d="M7 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm2 1H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="mb-2 text-xl font-bold dark:text-white">
+                Client-Centric Approach
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                Ensuring every project is tailored to meet your unique needs and
+                goals, placing your success at the forefront.
+              </p>
+            </div>
+            <div>
+              <div
+                class="mx-auto flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-800 lg:h-12 lg:w-12 dark:bg-primary-800"
+              >
+                <svg
+                  class="w-6 h-6 text-primary-600 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 16"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"
+                  />
+                </svg>
+              </div>
+              <h3 class="mb-2 text-xl font-bold dark:text-white">
+                Optimized Custom Builds
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                Transforming websites from popular CMS platforms like WordPress
+                and Squarespace into much better-performing, optimized, and
+                custom-built solutions.
+              </p>
+            </div>
+            <div>
+              <div
+                class="mx-auto flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-800 lg:h-12 lg:w-12 dark:bg-primary-800"
+              >
+                <svg
+                  class="w-6 h-6 text-primary-600 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm.524 5.61a.5.5 0 0 1 .4-.34l1.122-.164.5-1.016a.521.521 0 0 1 .9 0l.5 1.016 1.122.164a.5.5 0 0 1 .277.853l-.812.791.192 1.116a.5.5 0 0 1-.725.528l-1-.528-1 .528a.5.5 0 0 1-.725-.528l.192-1.116-.812-.791a.5.5 0 0 1-.131-.513Zm-6 0a.5.5 0 0 1 .4-.34l1.126-.164.5-1.016a.521.521 0 0 1 .9 0l.5 1.016 1.122.164a.5.5 0 0 1 .277.853l-.812.791.192 1.116A.5.5 0 0 1 8 9.058L7 8.53l-1 .528a.5.5 0 0 1-.725-.528l.192-1.116-.812-.791a.5.5 0 0 1-.131-.513ZM10 16c-3.047 0-5.5-2.735-5.5-5h1a11.7 11.7 0 0 0 4.5.583c2.614 0 4.308-.391 4.524-.673l.976.09c0 2.265-2.453 5-5.5 5Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="mb-2 text-xl font-bold dark:text-white">
+                Enhanced User Experience
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                Focusing on improving user experience through intuitive design,
+                responsive layouts, and seamless navigation.
+              </p>
+            </div>
+            <div>
+              <div
+                class="mx-auto flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-800 lg:h-12 lg:w-12 dark:bg-primary-800"
+              >
+                <svg
+                  class="w-6 h-6 text-primary-600 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="m7.164 3.805-4.475.38L.327 6.546a1.114 1.114 0 0 0 .63 1.89l3.2.375 3.007-5.006ZM11.092 15.9l.472 3.14a1.114 1.114 0 0 0 1.89.63l2.36-2.362.38-4.475-5.102 3.067Zm8.617-14.283A1.613 1.613 0 0 0 18.383.291c-1.913-.33-5.811-.736-7.556 1.01-1.98 1.98-6.172 9.491-7.477 11.869a1.1 1.1 0 0 0 .193 1.316l.986.985.985.986a1.1 1.1 0 0 0 1.316.193c2.378-1.3 9.889-5.5 11.869-7.477 1.746-1.745 1.34-5.643 1.01-7.556Zm-3.873 6.268a2.63 2.63 0 1 1-3.72-3.72 2.63 2.63 0 0 1 3.72 3.72Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="mb-2 text-xl font-bold dark:text-white">
+                Performance Optimization
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                Implementing strategies to optimize website speed, loading
+                times, and overall performance for a superior online presence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-showcase" class="bg-white dark:bg-gray-900 lg:py-16">
+        <div class="">
+          <div class="max-w-screen-md mb-8 lg:mb-16 mx-auto text-center">
+            <h2
+              class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+            >
+              Showcases
+            </h2>
+            <p
+              class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"
+            >
+              Dive into my world of digital craftsmanship. Explore a curated
+              collection of projects that blend creativity, innovation, and
+              precision. Each showcase tells a unique story of successful
+              collaborations and transformative solutions. Ready to be inspired?
+              Start your journey below
+            </p>
+          </div>
+
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden rounded-lg"
+              src="./src/assets/img/thumbnail-anderson-water.jpg"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block rounded-lg"
+              src="./src/assets/img/thumbnail-anderson-water.jpg"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                Anderson Water-Power-Air | Water Softener, Generators & More!
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                At Anderson, our entire team is committed to helping you and
+                your loved ones live better. From water treatment and air
+                purification to emergency power...
+              </p>
+              <a
+                href="https://www.andersonwater.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnail-beau-vie.jpg"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnail-beau-vie.jpg"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0 lg:order-1">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                Beau Vie | High-end Fragrances for Candles, Diffusers and more!
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                Indulge in the world of luxury home fragrances and accessories
+                from Beau Vie.
+              </p>
+              <a
+                href="https://www.beauvie.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden rounded-lg"
+              src="./src/assets/img/thumbnail-country-ski.jpg"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block rounded-lg"
+              src="./src/assets/img/thumbnail-country-ski.jpg"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                Country Ski & Sport | Shop Ski Gear, Apparel, Equipment & More
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                Country Ski & Sport is the best place to shop for skis,
+                snowboards, and winter sports apparel in the Boston area, shop
+                online or visit our three MA...
+              </p>
+              <a
+                href="https://www.countryski.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnail-regenefi.jpg"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnail-regenefi.jpg"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0 lg:order-1">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                Regenefi | Premium CBD Oil Product
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                Regenefi (re-jen-a'-fy) – To restore, replenish, and strengthen
+                a system, organ, or organism. To make whole, and surpass what
+                once was.
+              </p>
+              <a
+                href="https://www.regenefi.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden rounded-lg"
+              src="./src/assets/img/thumbnail-leone-alato-usa.jpg"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block rounded-lg"
+              src="./src/assets/img/thumbnail-leone-alato-usa.jpg"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                Leone Alato USA
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                Leone Alato USA is a specialist importer of authentic Italian
+                wines and spirits, including both our owned brands and other
+                high-quality independent producers from around Italy. We are the
+                US import branch (founded in 2010 as Montcalm Wine Importers) of
+                our mother company, Le Tenute del Leone Alato.
+              </p>
+              <a
+                href="https://www.leonealatousa.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnail-metro-pet-supply.jpg"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnail-metro-pet-supply.jpg"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0 lg:order-1">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                Metro Pet Supply | Superior, Holistic Pet Products Montville, NJ
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                Metro Pet Supply in Montville, NJ offers high-quality pet
+                products, supplies, and expert advice.
+              </p>
+              <a
+                href="https://www.metropetsupplynj.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden rounded-lg"
+              src="./src/assets/img/thumbnail-sago-palm-hotel.jpg"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block rounded-lg"
+              src="./src/assets/img/thumbnail-sago-palm-hotel.jpg"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                Sago Palm Hotel
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                As one of Jamaica's newest and most sought-after luxury hotels,
+                we strive to provide an experience that entices the mind and
+                refreshes the soul.
+              </p>
+              <a
+                href="https://www.sagopalmhotel.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnail-savoia-pastry.jpg"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnail-savoia-pastry.jpg"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0 lg:order-1">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                Savoia Pastry Shoppe | Wedding Cakes, Cookies Rochester NY
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                Savor the finest pastries and cakes at Savoia Pastry Shoppe in
+                Rochester, NY. Explore our delectable creations, perfect for all
+                occasions!
+              </p>
+              <a
+                href="https://www.savoiapastry.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden rounded-lg"
+              src="./src/assets/img/thumbnail-ss.jpg"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block rounded-lg"
+              src="./src/assets/img/thumbnail-ss.jpg"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                S&S Limousine | Rochester, Buffalo, Syracuse NY Limo Service
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                Established in 1996, Joe Spadaro and S&S Limousines have been
+                striving to provide the highest level of personable service and
+                the utmost sophistication when hiring a limo in NY. We're based
+                in Western NY and proudly serve Rochester, Buffalo, Syracuse,
+                and the entire state of New York.
+              </p>
+              <a
+                href="https://www.sslimousine.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnail-thermapparel.jpg"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnail-thermapparel.jpg"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0 lg:order-1">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                ThermApparel | Cooling Vests for MS & Sports
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                ThermApparel is a leading manufacturer of lightweight,
+                comfortable, and invisible cooling apparel. Keeping MS under
+                control, or keeping things comfortable...
+              </p>
+              <a
+                href="https://www.thermapparel.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden rounded-lg"
+              src="./src/assets/img/thumbnail-timbucha.jpg"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block rounded-lg"
+              src="./src/assets/img/thumbnail-timbucha.jpg"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                Timbucha Kombucha | 100% Raw Live Organic Kombucha Drink
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                Most people discover Kombucha somewhere along their path toward
+                improved health and wellness.
+              </p>
+              <a
+                href="https://www.timbucha.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnail-viewsport.png"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnail-viewsport.png"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0 lg:order-1">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                ViewSPORT | Sweat Activated Fitness Apparel
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                The innovation behind ViewSPORT® sweat-activated technology is
+                forever changing the way today's athlete stays motivated. The
+                more you sweat, the more your...
+              </p>
+              <a
+                href="https://www.viewsport.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden rounded-lg"
+              src="./src/assets/img/thumbnil-gambino-cigars.jpg"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block rounded-lg"
+              src="./src/assets/img/thumbnil-gambino-cigars.jpg"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                Gambino Cigars
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                Curious why those who appreciate unsurpassed quality choose
+                Gambino Cigars? Our gallery contains a wide array of images
+                featuring Gambino Cigars in stunning...
+              </p>
+              <a
+                href="https://www.gambinocigars.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900">
+          <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+          >
+            <img
+              class="w-full dark:hidden lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnil-titan.png"
+              alt="dashboard image"
+            />
+            <img
+              class="w-full hidden dark:block lg:order-2 rounded-lg"
+              src="./src/assets/img/thumbnil-titan.png"
+              alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0 lg:order-1">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+              >
+                Titan Motorworks | Auto Detailing & Customizing Rochester NY
+              </h2>
+              <p
+                class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+              >
+                For over a decade the automotive specialists at Titan Motorworks
+                in Rochester, formerly Perfection Auto Detailing, have earned a
+                reputation as Western NY’s most esteemed provider of automotive
+                reconditioning, vehicle paint protection, and custom performance
+                upgrades. Get in touch and discover why the area’s most
+                discerning car enthusiasts refuse to go anywhere else.
+              </p>
+              <a
+                href="https://www.titanmotorworks.com/"
+                target="_blank"
+                class="inline-flex items-center text-white hover:text-white bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-800"
+              >
+                Check It Out
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="section-testimonials"
+        class="bg-white dark:bg-gray-800 lg:py-16"
+      >
+        <div
+          class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
+        >
+          <figure class="max-w-screen-md mx-auto">
+            <svg
+              class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+              viewBox="0 0 24 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                fill="currentColor"
+              />
+            </svg>
+            <blockquote>
+              <p
+                class="text-2xl font-medium text-primary-400 dark:text-primary-400"
+              >
+                "Dusan is awesome, easy to work with, easy to talk to and does
+                high quality work. I would highly recommend him!"
+              </p>
+            </blockquote>
+            <figcaption class="flex items-center justify-center mt-6 space-x-3">
+              <img
+                class="w-6 h-6 rounded-full"
+                src="./src/assets/img/sam-avatar.jpeg"
+                alt="profile avatar"
+              />
+              <div
+                class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700"
+              >
+                <div class="pr-3 font-medium text-gray-900 dark:text-white">
+                  Sam Pizzo
+                </div>
+                <div
+                  class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400"
+                >
+                  CEO at CMS Max Inc.
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="section-contact" class="bg-white dark:bg-gray-900 lg:py-16">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"
+          >
+            Contact Me
+          </h2>
+          <p
+            class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"
+          >
+            Ready to transform your ideas into digital brilliance? Let's chat!
+            Whether it's a project, a question, or a creative collaboration,
+            your message is the spark for something extraordinary. Connect with
+            me now, and let's craft success together!
+          </p>
+          <form action="#" class="space-y-8">
+            <div>
+              <label
+                for="name"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Your name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="John"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Your email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="john@gmail.com"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="subject"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Subject</label
+              >
+              <input
+                type="text"
+                id="subject"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="Let me know how I can help you"
+                required
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="message"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                >Your message</label
+              >
+              <textarea
+                id="message"
+                rows="6"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Leave a comment..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="py-3 px-5 text-sm font-medium text-center text-white hover:text-white rounded-lg bg-primary-800 sm:w-fit hover:bg-primary-900 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-800 dark:hover:bg-primary-900 dark:focus:ring-primary-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+        <div class="mx-auto max-w-screen-xl text-center">
+          <ul class="flex flex-wrap justify-center items-center mb-6">
+            <li class="mx-2">
+              <a
+                href="https://www.linkedin.com/in/dusan-cajic/"
+                target="_blank"
+                class="text-primary-400 dark:text-primary-400"
+              >
+                <svg
+                  class="w-[26px] h-[26px] text-primary-400 dark:text-primary-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 15 15"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                    clip-rule="evenodd"
+                  />
+                  <path d="M3 5.012H0V15h3V5.012Z" /></svg
+              ></a>
+            </li>
+            <li class="mx-2">
+              <a
+                href="https://www.youtube.com/channel/UCqpr5y5VCEX5qzR-qx_2vMw"
+                target="_blank"
+                class="text-primary-400 dark:text-primary-400"
+              >
+                <svg
+                  class="w-[26px] h-[26px] text-primary-400 dark:text-primary-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 14"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© <span class="footer-year">2023</span> Dusan Cajic. All Rights
+            Reserved.</span
+          >
+        </div>
+      </footer>
+
+      <button
+        id="btn-top"
+        title="Go to top"
+        class="bg-primary-800 fixed bottom-3 right-3 z-50 hidden cursor-pointer rounded-lg border-none px-5 py-2.5 text-white outline-none hover:outline-none focus:outline-none hover:bg-primary-900"
+      >
+        <svg
+          class="w-[30px] h-[30px] text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 8"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1"
+            d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"
+          />
+        </svg>
+      </button>
     </div>
+
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

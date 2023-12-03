@@ -6,10 +6,15 @@
     "serve": "vite preview"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.5",
     "vitawind": "^2.2.4",
-    "vite": "^2.4.4",
-    "cross-env": "^7.0.3"
+    "vite": "^2.4.4"
+  },
+  "dependencies": {
+    "flowbite": "^2.2.0",
+    "jquery": "^3.7.1",
+    "lodash": "^4.17.21"
   }
 }
